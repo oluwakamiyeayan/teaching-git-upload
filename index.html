@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 mx-auto shadow mt-5 p-5">
+                <input style="border: 1px solid grey; width: 100%; background-color: white; height: 50px;" id="screen">
+                <div class="row mt-3 ml-2 text-center">
+                    <button class="btn btn-primary col me-1" onclick="display(1)">1</button>
+                    <button class="btn btn-primary col me-1" onclick="display(2)">2</button>
+                    <button class="btn btn-primary col me-1" onclick="display(3)">3</button>
+                    <button class="btn btn-primary col me-1" onclick="display(4)">4</button>
+                </div>
+                <div class="row mt-3 ml-2 text-center">
+                    <button class="btn btn-primary col me-1" onclick="display(5)">5</button>
+                    <button class="btn btn-primary col me-1" onclick="display(6)">6</button>
+                    <button class="btn btn-primary col me-1" onclick="display(7)">7</button>
+                    <button class="btn btn-primary col me-1" onclick="display(8)">8</button>
+                </div>
+                <div class="row mt-3 ml-2 text-center">
+                    <button class="btn btn-primary col me-1" onclick="display(9)">9</button>
+                    <button class="btn btn-primary col me-1" onclick="equal()">=</button>
+                    <button class="btn btn-primary col me-1" onclick="add()">+</button>
+                    <button class="btn btn-primary col me-1" onclick="delScrn(del)">del</button>
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+    <!-- I need the function if equal is typed, and the character has add symbol, let onclick of equal sign gives result -->
+</body>
+<script>
+    // let scrn = '';
+    // scrn += document.getElementById('screen').value 
+    function display(umber) {
+     document.getElementById('screen').value += umber
+      
+    }
+   
+    function equal() {
+        let val =  document.getElementById('screen').value
+        val.innerHTML = eval(val.innerHTML)
+
+    }
+    function delScrn(del) {
+        let val =  document.getElementById('screen').value
+        
+        
+    }
+    // function add() {
+    //     let val =  document.getElementById('screen').value
+    //     val = Number(val) + Number(val)
+    //     val.innerHTML
+    //    console.log(val)
+       
+    // }
+    // function minus() {
+    //     let val =  document.getElementById('screen').value
+    //     val = Number(val) - Number(val)
+    //    console.log(val)
+    // }
+
+    9054912228
+   
+    // function equal(umber, mber) {
+        
+        // if a var is equal to onclick of diplay  let the screen value clears and let screen be equal the assignment to the variable
+        // if (val = Number(umber) + Number(umber)) {
+        //     val
+        // }
+    //    if (scrn = display(1)&& scrn = display(2)) {
+            
+    //     } else {
+            
+    //     }
+    // }
+
+</script>
+</html>
